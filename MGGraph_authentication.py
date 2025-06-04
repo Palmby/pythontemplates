@@ -7,4 +7,11 @@ secret_creds = {
 }
 credential = ClientSecretCredential(**secret_creds)
 
+'''
+Documentation on how to Make Calls:
+Overview:
+https://learn.microsoft.com/en-us/graph/sdks/sdks-overview
 
+Python SDK Docs:
+https://learn.microsoft.com/en-us/graph/sdks/sdk-installation?tabs=python
+'''
