@@ -1,5 +1,6 @@
 from azure.identity import ClientSecretCredential
-
+import requests
+from msgraph import GraphServiceClient
 secret_creds = {
 "tenant_id": '',
 "client_id": '',
@@ -7,11 +8,20 @@ secret_creds = {
 }
 credential = ClientSecretCredential(**secret_creds)
 
-'''
-Documentation on how to Make Calls:
-Overview:
-https://learn.microsoft.com/en-us/graph/sdks/sdks-overview
+client = GraphServiceClient(credentials=credential)
 
-Python SDK Docs:
-https://learn.microsoft.com/en-us/graph/sdks/sdk-installation?tabs=python
+
+
+
+
+
 '''
+info on the Graph SDK: https://pypi.org/project/msgraph-sdk/
+
+
+use Microsoft Graph Explorer to explore API call types
+https://developer.microsoft.com/en-us/graph/graph-explorer
+
+'''
+
+
